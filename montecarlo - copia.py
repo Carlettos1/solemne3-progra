@@ -5,7 +5,7 @@ import numpy as np
 
 length = 32
 J = 1
-steps = 1_000
+steps = 1000
 
 
 #  interacción entre los vecinos
@@ -73,7 +73,7 @@ ax.scatter(x, y, z, c="#0000ffa0")
 x, y, z = (estado_inicial[0] == -1).nonzero()
 ax.scatter(x, y, z, c="#ff0000a0")
 
-ax = fig.add_subplot(222, projection="3d")
+ax = fig.add_subplot(223, projection="3d")
 x, y, z = (estado_final[0] == 1).nonzero()
 ax.scatter(x, y, z, c="#0000ffa0")
 x, y, z = (estado_final[0] == -1).nonzero()
